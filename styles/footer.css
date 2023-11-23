@@ -1,0 +1,12 @@
+.footer_inner {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+    width: 100%;
+}
+.footer_images > img {
+    width: 169px;
+    height: 50px;
+}

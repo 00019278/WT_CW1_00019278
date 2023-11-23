@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+header {
+    padding: 8px 0;
+    background-image: linear-gradient(to bottom,#1d7cd0 0,#196db5 100%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    color: coral;
+}
+
+.account_number {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account_number > p {
+    color: white;
+}
+
+.account_number > img {
+    width: 24px;
+    margin-bottom: 5px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: start;
+    text-decoration: none;
+}
+
+.logo > img {
+    height: 36px;
+    padding-top: 1px;
+}
+
+.logo > p {
+    color: coral;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.left_bar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e0dcdc;
+}
+
+header ul li{
+    list-style: none;
+}
+
+
+
+.profile_info {
+    position: relative;
+}
+
+.profile_info > p {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.profile_click {
+    transition: 0.5s;
+    padding: 5px 10px;
+    min-width: 200px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profile_click.active {
+    z-index: 10;
+    opacity: 100;
+    color: black;
+}
