@@ -19,8 +19,8 @@ function menuClick() {
 
 
 function handler() {
-    if(sessionStorage.getItem('user')) {
-        console.log(sessionStorage.getItem('user'));
+    if(localStorage.getItem('user')) {
+        console.log(localStorage.getItem('user'));
     } else if(window.location.pathname != '/login.html') {
         window.location.pathname = './login.html'
     }
@@ -30,11 +30,11 @@ handler()
 
 
 function logIn() {
-    sessionStorage.setItem('user', 'true');
+    localStorage.setItem('user', 'true');
     window.location.pathname = './index.html'
 }
 
 function logOut() {
-    sessionStorage.clear();
+    localStorage.clear();
     handler()
 }
